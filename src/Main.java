@@ -25,8 +25,11 @@ class Main {
 
                 b.computerPlay();
                 b.showCards();
-                System.out.println(b.getComputerCounter());
-                System.out.println(b.getPlayerCounter());
+
+                System.out.println("");
+
+                System.out.println("The computer's count is " + b.getComputerCounter());
+                System.out.println("Your count is " + b.getPlayerCounter());
 
                 if (b.winner(b.getComputerCounter(), b.getPlayerCounter())){
                     System.out.println("You win!!!");
@@ -37,7 +40,7 @@ class Main {
                     b.bet(false);
                 }
 
-                System.out.print("You balance is ");
+                System.out.print("Your purse is now ");
                 System.out.println(b.getPlayerPurse());
 
                 b.resetGame();
